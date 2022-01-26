@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap">
+    </link>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            <input class="modal-title" placeholder="Title" type="text">
+            <input class="modal-text" placeholder="Take a note..." type="text">
+            <span class="modal-close-button">Close</span>
+        </div>
+    </div>
+    <main>
+        <header>
+            <img class="header-logo" src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png">
+            <h2 class="header-title">Keep</h2>
+        </header>
+        <div id="form-container">
+            <form id="form" autocomplete="off">
+                <input type="text" placeholder="Title" id="note-title">
+                <input type="text" placeholder="Take a note..." id="note-text">
+                <div id="form-buttons">
+                    <button type="submit" id="submit-button">Submit</button>
+                    <button type="button" id="form-close-button">Close</button>
+                </div>
+            </form>
+        </div>
+        <div id="notes"></div>
+        <div id="placeholder">
+            <img id="placeholder-logo" src="https://assets.materialup.com/uploads/ef2f0ee0-6f32-478c-b160-f52a308ee211/preview">
+            <!-- <i class="fas fa-lightbulb" id="placeholder-logo"></i> -->
+            <p id="placeholder-text">Notes you add appear here</p>
+        </div>
+
+        <!-- tooltip -->
+        <div id="color-tooltip">
+            <div class="color-option" data-color="#fff" id="white"></div>
+            <div class="color-option" data-color="#d7aefb" id="purple"></div>
+            <div class="color-option" data-color="#fbbc04" id="orange"></div>
+            <div class="color-option" data-color="#a7ffeb" id="teal"></div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
